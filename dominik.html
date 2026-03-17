@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pm.ico">
+</head>
+<body onload="tables(), displayRandomFunFact()">
+    <header>
+        <h1>Welcome to Project Moon social media!</h1>
+    </header>
+    <nav>
+<h2>Login</h2>
+<form>
+    <input type="text" placeholder="Username" required id="username">
+    <input type="password" placeholder="Password" required id="password">
+    <button type="submit" id="button">Log In</button>
+</form>
+<input type="text" id="search" placeholder="Look for..." class="search-field" onchange="search()">
+<button id="theme" >Toggle Theme</button>
+<script src="script.js"></script>
+    </nav>
+    <nav id="nav2">
+        <p id="funfact"></p>
+    </nav>
+    <section>
+        <p id="table1content"></p>
+        <p id="table2content"></p>
+        <p id="table3content"></p>
+        <p id="table4content"></p>
+        <p id="table5content"></p>
+    </section>
+</body>
+</html>
